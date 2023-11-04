@@ -1,21 +1,16 @@
-{% extends "default/layout.html" %}
-{% load static %}
 
-{% block title %} Kapcsolat {% endblock %}
-
-{% block body %}
     
     <!DOCTYPE html>
 <html lang="hu">
-
+    {% block title %} Kapcsolat {% endblock %}
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/Kapcsolat.css">
 <title>Kapcsolat</title>
-
 </head>
 
+
+{% block body %}
 <body>
     <section class="banner">
         <img src=
@@ -48,7 +43,7 @@
     </section>
 
     <section class="contact-info">
-        <h2>Contact Information</h2>
+        <h2>Kontakt Információ</h2>
         <address>
             Networktech-Solutions<br>
             Orgona utca 1.<br>
@@ -60,7 +55,6 @@
 
 
 </body>
-
+{% endblock %}
 </html>
     
-{% endblock %}
