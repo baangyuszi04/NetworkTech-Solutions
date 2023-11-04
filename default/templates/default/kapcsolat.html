@@ -1,0 +1,66 @@
+{% extends "default/layout.html" %}
+{% load static %}
+
+{% block title %} Kapcsolat {% endblock %}
+
+{% block body %}
+    
+    <!DOCTYPE html>
+<html lang="hu">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/Kapcsolat.css">
+<title>Kapcsolat</title>
+
+</head>
+
+<body>
+    <section class="banner">
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
+            alt="Welcome to our Contact Us page">
+        <h1>Lépjen velünk kapcsolatba!</h1>
+        <p>A rendelkezésére állunk! </p>
+    </section>
+
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Az Ön adatai</h2>
+            <form action="#" method="POST">
+
+                <label for="name">Név: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefon: </label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Üzenet: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-button">Küldés</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            Networktech-Solutions<br>
+            Orgona utca 1.<br>
+            Győr, 9006<br>
+            Telefon: <a href="tel:1234567890">06 20 123 4567</a><br>
+            Email: <a href="mailto:info@example.com">Networktech-Solutions@gmail.com</a>
+        </address>
+    </section>
+
+
+</body>
+
+</html>
+    
+{% endblock %}
